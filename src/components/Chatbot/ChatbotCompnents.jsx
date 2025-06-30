@@ -286,7 +286,7 @@ const ChatbotComponent = () => {
         <button className="chatbot-open-button" onClick={toggleChat}>
           {/* 65. Image for the chat open button */}
           <img
-            src="/images/operator.png" // Path to the chat icon image. Assumes it's in the /public/images folder.
+            src="/Images/operator.png" // Path to the chat icon image. Assumes it's in the /public/images folder.
             alt="Chat Icon"
             style={{ width: "100px", height: "auto" }} // Inline styles for image size.
           />

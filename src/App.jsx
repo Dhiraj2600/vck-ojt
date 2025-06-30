@@ -4,14 +4,14 @@ import HomePage from "./pages/HomePage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ContactPage from "./pages/ContactPage";
-import "./styles/pages.css";
+import "./styles/Pages.css";
 import AboutPage from "./pages/AboutPage";
 import CoursesPage from "./pages/CoursesPage";
 import AdmissionsPage from "./pages/AdmissionPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import { useState } from "react";
 import DeveloperInfoPopup from "./components/DeveloperInfo/DeveloperInfoPopup";
-
+import ChatbotComponent from "./components/Chatbot/ChatbotCompnents";
 function App() {
   const [showPopup, setShowPopup] = useState(true);
   const handleClosePopup = () => {
@@ -42,6 +42,7 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
+        <ChatbotComponent/>
         <Footer />
       </div>
     </Router>
